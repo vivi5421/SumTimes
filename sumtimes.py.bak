@@ -19,25 +19,16 @@ from kivy.uix.floatlayout import FloatLayout
 from kivy.clock import Clock
 
 class Calculator(Screen):
+    
+    calculation = StringProperty()
 
-    data = ListProperty()
-
-    def args_converter(self, row_index, item):
-        return {
-            'note_index': row_index,
-            'note_content': item['content'],
-            'note_title': item['title']}
-
-class NoteApp(App):
+class SumTimeApp(App):
 
     def build(self):
-        self.notes = Calculator(name='notes')
-        # self.load_notes()
-
         self.transition = SlideTransition(duration=.35)
         root = ScreenManager(transition=self.transition)
-        root.add_widget(self.notes)
+        root.add_widget(Calculator(name='calc'))
         return root
 
 if __name__ == '__main__':
-    NoteApp().run()
+    SumTimeApp().run()

@@ -25,22 +25,22 @@
             Button:
                 text: 'AC'
                 width: self.height
-                #on_release: app.reset()
+                on_release: app.reset()
             
             Button:
                 text: 'HMsm'
                 width: self.height
-                #on_release: app.change_format(self.text)
+                on_release: app.change_format(self.text)
             
             Button:
                 text:'HMs'
                 width: self.height
-                #on_release: app.change_format(self.text)
+                on_release: app.change_format(self.text)
             
             Button:
                 text:'Ms'
                 width: self.height
-                #on_release: app.change_format(self.text)
+                on_release: app.change_format(self.text)
         
         BoxLayout:
             orientation: 'horizontal'
@@ -48,22 +48,22 @@
             Button:
                 text: '7'
                 width: self.height
-                #on_release: app.figure(self.text)
+                on_release: app.figure(self.text)
             
             Button:
                 text: '8'
                 width: self.height
-                #on_release: app.figure(self.text)
+                on_release: app.figure(self.text)
             
             Button:
                 text: '9'
                 width: self.height
-                #on_release: app.figure(self.text)
+                on_release: app.figure(self.text)
             
             Button:
                 text:'Msm'
                 width: self.height
-                #on_release: app.change_format(self.text)
+                on_release: app.change_format(self.text)
         
         BoxLayout:
             orientation: 'horizontal'
@@ -71,22 +71,22 @@
             Button:
                 text: '4'
                 width: self.height
-                #on_release: app.figure(self.text)
+                on_release: app.figure(self.text)
             
             Button:
                 text: '5'
                 width: self.height
-                #on_release: app.figure(self.text)
+                on_release: app.figure(self.text)
             
             Button:
                 text: '6'
                 width: self.height
-                #on_release: app.figure(self.text)
+                on_release: app.figure(self.text)
             
             Button:
                 text:'-'
                 width: self.height
-                #on_release: app.minus()
+                on_release: app.minus()
         
         BoxLayout:
             orientation: 'horizontal'
@@ -94,22 +94,22 @@
             Button:
                 text: '1'
                 width: self.height
-                #on_release: app.figure(self.text)
+                on_release: app.figure(self.text)
             
             Button:
                 text: '2'
                 width: self.height
-                #on_release: app.figure(self.text)
+                on_release: app.figure(self.text)
             
             Button:
                 text: '3'
                 width: self.height
-                #on_release: app.figure(self.text)
+                on_release: app.figure(self.text)
             
             Button:
                 text:'+'
                 width: self.height
-                #on_release: app.add()
+                on_release: app.add()
         
         BoxLayout:
             orientation: 'horizontal'
@@ -117,14 +117,17 @@
             Button:
                 text: '0'
                 width: self.height * 2
-                #on_release: app.figure(self.text)
+                on_release: app.figure(self.text)
             
             Button:
                 text: '.:'
                 width: self.height
-                #on_release: app.separator()
+                on_release: app.separator()
             
             Button:
                 text:'='
                 width: self.height
-                #on_release: app.equal()
+                on_release: app.equal()
+            
+        
+        
